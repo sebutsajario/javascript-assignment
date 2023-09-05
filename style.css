@@ -1,0 +1,265 @@
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Rubik';
+}
+
+/* Section CSS */
+.sec {
+    background-color: #D2E9E9;
+    color: black;
+    padding: 0px;
+    transition: background 0.5s;
+}
+
+.sec.dark {
+    background-color: #393053;
+    color: white;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* Navbar CSS */
+
+.navbar {
+    transition: background 0.5s
+}
+
+.sec.dark .navbar {
+    background-color: #18122B;
+}
+
+/* Web Title CSS */
+
+.webTitle {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card CSS */
+.card {
+    transition: background 0.5s;
+}
+
+.sec.dark .card {
+    background-color: #443C68;
+    color: white
+}
+
+.expandContent {
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.expandContent.expand-active {
+    height: max-content;
+    transition: height 0.5s ease-in-out;
+}
+
+/* Toggle CSS */
+
+.toggle-dark {
+    width: 30px;
+    height: 30px;
+    background-color: #D2E9E9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.5s
+}
+
+.toggle-dark:before {
+    content: '\f186';
+    font-family: fontAwesome;
+    color: black;
+}
+
+.toggle-dark:hover {
+    background-color: #C4DFDF;
+}
+
+.sec.dark .toggle-dark {
+    background-color: #443C68;
+}
+
+.sec.dark .toggle-dark:hover {
+    background-color: #18122B;
+}
+
+.sec.dark .toggle-dark:before {
+    content: '\f185';
+    color: white;
+}
+
+/* Home Navigation */
+
+.home-nav {
+    background-color: inherit;
+    color: black;
+}
+
+.home-nav:hover {
+    background-color: #D2E9E9;
+    color: black;
+}
+
+.sec.dark .home-nav {
+    background-color: inherit;
+    color: white;
+}
+
+.sec.dark .home-nav:hover {
+    background-color: #393053;
+    color: white;
+}
+
+/* Icon dark CSS */
+
+.sec.dark .icon-web {
+    content: url(assets/web-development-dark.svg);
+}
+
+.sec.dark .icon-translation {
+    content: url(assets/translation-dark.svg);
+}
+
+.sec.dark .read-more-btn {
+    background-color: #18122B;
+}
+
+.sec.dark .read-more-btn:hover {
+    background-color: #393053;
+}
+
+.sec.dark .contact-btn {
+    background-color: #18122B;
+}
+
+.sec.dark .contact-btn:hover {
+    background-color: #393053;
+}
+
+/* Social Media and Contact CSS */
+
+.sec.dark .social-media {
+    background-color: #443C68;
+}
+
+.sec.dark .contact-card {
+    background-color: #443C68;
+}
+
+.sec.dark .social-media-icon:hover {
+    color: #9BABB8;
+}
+
+/* Form CSS */
+
+.contact-form {
+    display: none;
+    width: 60%;
+    height: 80%;
+    position: fixed;
+    background-color: white;
+    bottom: 25px;
+    right: 18%;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+}
+
+.sec.dark .contact-form {
+    color: black;
+}
+
+input {
+    border-width: 2px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:focus {
+    border: 2px solid black;
+    outline: none;
+}
+
+textarea {
+    border-width: 2px;
+}
+
+textarea:focus {
+    border: 2px solid black;
+    outline: none;
+}
+
+.close-form-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Animation */
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 1} 
+    to {opacity: 0}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1} 
+    to {opacity: 0}
+}
+
+/* Additional Responsive */
+@media (max-width: 760px) {
+    .img-top {
+        display: none;
+    }
+
+    .title-container {
+        display: block;
+    }
+
+    .title-content {
+        width: 80%;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    #card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-information {
+        display: flex;
+        flex-direction: column;
+    }
+}

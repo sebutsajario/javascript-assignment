@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="sec pb-5">
+        <div class="navbar flex flex-row justify-end items-center w-[100%] fixed font-bold bg-[#C4DFDF]">
+            <a class="home-nav mx-5 p-0 px-2 py-3" href="">Home</a>
+            <div class="toggle-dark mr-5 my-2"></div>
+        </div>
+        <div class="title-container flex justify-evenly px-5 py-20">
+            <div class="title-content w-[40vw] my-auto">
+                <h1 class="webTitle text-left text-3xl font-bold md:text-4xl font-extrabold mb-3" id="title">Hello!<br>Welcome to my Portfolio Website.</h1>
+                <p class="text-left text-sm md:text-base" id="description">Ready to embark on a digital journey that transcends boundaries? I'm here to make your web development projects shine and your content speak the language of your audience. Let's collaborate and take your online presence to new heights.</p>
+            </div>
+            <div>
+                <img class="img-top w-[300px]" src="assets/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="">
+            <div class="flex flex-row justify-evenly" id="card-container">
+                <div class="card w-[320px] bg-[#E3F4F4] border-none rounded-xl px-5 pt-10 pb-5" id="">
+                    <img class="icon-web w-[50px] md:w-[80px] mx-auto mb-2" src="assets/web-development.svg" alt="">
+                    <h2 class="text-center font-extrabold text-xl mb-2">Web Development</h2>
+                    <div class="expandContent" id="showMoreContent1">
+                        <p class="text-sm md:text-base">Create and maintain websites and web applications for the internet. Encompasses a wide range of activities, including designing the user interface, writing code to build the website's functionality, and optimizing it for performance and user experience. Using various programming languages, frameworks, and tools to bring web projects to life, ensuring that they are visually appealing, interactive, and functional across different devices and browsers.</p>
+                    </div>
+                    <div class="expandContentHolder pt-5">
+                        <span class="read-more-btn border-none cursor-pointer px-2 py-2 bg-[#C4DFDF] rounded-lg hover:bg-[#D2E9E9] text-sm md:text-base" expand-more data-hidetext="Read Less" data-showtext="Read More" data-target="showMoreContent1">Read More</span>
+                    </div>
+                </div>
+                <div class="card w-[320px] bg-[#E3F4F4] border-none rounded-xl px-5 pt-10 pb-5" id="">
+                    <img class="icon-translation w-[50px] md:w-[80px] mx-auto mb-2" src="assets/translation.svg" alt="">
+                    <h2 class="text-center font-extrabold text-xl mb-2">Translation Service</h2>
+                    <div class="expandContent" id="showMoreContent2">
+                        <p class="text-sm md:text-base">Translating text from English to Bahasa Indonesia. Including translating words, phrases, and sentences to convey the original content accurately while preserving the same meaning. Translation is important in various contexts, such as business communication, literature, education, and more, to enable people who speak Bahasa Indonesia to understand and access information from the English text.</p>
+                    </div>
+                    <div class="expandContentHolder pt-5">
+                        <span class="read-more-btn border-none cursor-pointer px-2 py-2 bg-[#C4DFDF] rounded-lg hover:bg-[#D2E9E9] text-sm md:text-base" expand-more data-hidetext="Read Less" data-showtext="Read More" data-target="showMoreContent2">Read More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-media flex flex-col md:flex-row bg-[#E3F4F4] w-[80%] items-center py-5 mt-5 mx-auto rounded-xl">
+            <div class="w-[40%]">
+                <h2 class="text-center font-extrabold text-base md:text-lg">Social Media</h2>
+                <p class="text-center text-sm md:text-base">Feel free to check my social media account</p>
+            </div>
+            <div class="flex flex-row flex-wrap justify-evenly w-[60%]">
+                <a class="social-media-icon text-center hover:text-[#61677A]" href="https://www.facebook.com/mariozoelmi/" target="_blank">
+                    <i class="fa fa-facebook mt-1 text-2xl md:text-4xl mt-0" aria-hidden="true"></i>
+                    <p class="text-sm md:text-base">Facebook</p>
+                </a>
+                <a class="social-media-icon text-center hover:text-[#61677A]" href="https://www.instagram.com/sebutsajario/" target="_blank">
+                    <i class="fa fa-instagram mt-1 text-2xl md:text-4xl mt-0" aria-hidden="true"></i>
+                    <p class="text-sm md:text-base">Instagram</p>
+                </a>
+                <a class="social-media-icon text-center hover:text-[#61677A] mt-0" href="https://twitter.com/sebutsajaiyo" target="_blank">
+                    <i class="fa fa-twitter mt-1 text-2xl md:text-4xl" aria-hidden="true"></i>
+                    <p class="text-sm md:text-base">Twitter</p>
+                </a>
+                <a class="social-media-icon mt-1 text-center hover:text-[#61677A] mt-0" href="https://github.com/sebutsajario" target="_blank">
+                    <i class="fa fa-github text-2xl md:text-4xl" aria-hidden="true"></i>
+                    <p class="text-sm md:text-base">Github</p>
+                </a>
+            </div>
+        </div>
+        <div class="contact-card mx-auto w-[60%] text-center mt-5 mb-5 px-5 py-5 bg-[#E3F4F4] rounded-xl">
+            <div class="text-center mb-5">
+                <h2 class="text-xl md:text-2xl font-extrabold">Get in touch with me!</h2>
+                <p class="text-sm md:text-base">If you interested to use my service. Please don't hesitate to connect with me.<br>Let me know by contacting me via email or phone or sending me a message with the form below.</p>
+            </div>
+            <div class="contact-information flex flex-col md:flex-row justify-evenly mb-5">
+                <div class="flex-col text-center">
+                    <i class="fa fa-envelope-o text-2xl md:text-4xl" aria-hidden="true"></i>
+                    <p class="text-sm md:text-base">mariozoelmi@gmail.com</p>
+                    <p class="text-sm md:text-base">mariozulmiw@gmail.com</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa fa-mobile text-2xl md:text-4xl" aria-hidden="true"></i>
+                    <p class="text-sm md:text-base">+6287811088761</p>
+                </div>
+            </div>
+            <button onclick="openForm()" class="contact-btn border-none px-2 py-2 bg-[#C4DFDF] rounded-lg hover:bg-[#D2E9E9]">Contact Me</button>
+        </div>
+        <div class="contact-form rounded-xl flex-col py-5 px-5 h-max">
+            <form id="form" action="/" name="form">
+                <h1 class="mb-10 text-center text-3xl font-extrabold">Contact Form</h1>
+                <div class="grid grid-cols-1 gap-5">
+                    <input class="name-form" type="text" placeholder="Name" name="name">
+                    <input class="phone-form" type="text" placeholder="Phone Number" name="phone">
+                    <input class="email-form" type="text" placeholder="Email" name="email">
+                    <input class="subject-form" type="text" placeholder="Subject" name="subject">
+                    <textarea class="message-form" class="resize-none" name="message" placeholder="Message" maxlength="100"></textarea>
+                    <div class="form-message text-center"></div>
+                    <input class="submit-form mb-2 px-5 py-1 bg-slate-500 rounded-lg w-max mx-auto" type="submit" value="Submit">
+                    <button class="close-form-btn" type="button" onclick="closeForm()">
+                        <i class="fa fa-times text-2xl" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>   
+    
+    <script src="main.js"></script>
+</body>
+</html>
